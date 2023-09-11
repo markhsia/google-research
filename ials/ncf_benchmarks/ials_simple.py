@@ -105,8 +105,10 @@ def main():
     train_by_user[u].append(i)
     train_by_item[i].append(u)
 
-  train_by_user = list(train_by_user.iteritems())
-  train_by_item = list(train_by_item.iteritems())
+  #train_by_user = list(train_by_user.iteritems())
+  #train_by_item = list(train_by_item.iteritems())
+  train_by_user = list(train_by_user.items())
+  train_by_item = list(train_by_item.items())
 
   train_ds = IALSDataset(train_by_user, train_by_item, [], 1)
 
