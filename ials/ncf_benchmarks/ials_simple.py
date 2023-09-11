@@ -31,6 +31,7 @@ import argparse
 # https://github.com/hexiangnan/neural_collaborative_filtering
 from Dataset import Dataset
 #from evaluate import evaluate_model
+import evaluate_model
 
 import numpy as np
 from collections import defaultdict
